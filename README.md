@@ -1,4 +1,4 @@
-# Banking App (TypeScript)
+# Banking System App (TypeScript)
 
 A simple banking system implemented in TypeScript, following OOP and SOLID principles. This project demonstrates a clear folder structure with interfaces, models, services, and a controller. It runs entirely in memory (no external database).
 
