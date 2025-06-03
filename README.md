@@ -74,7 +74,7 @@ A simple banking system implemented in TypeScript, following OOP and SOLID princ
    
    git clone https://github.com/onepiece-coding/typescript-banking-system.git
    
-   cd banking-app
+   cd typescript-banking-system
    
 2. **Install dependencies**
 
