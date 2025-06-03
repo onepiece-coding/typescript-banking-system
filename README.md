@@ -4,8 +4,7 @@ A simple banking system implemented in TypeScript, following OOP and SOLID princ
 
 ## Folder Structure
 
-    ```bash
-    
+```bash
     banking-app/
     
     ├── package.json
