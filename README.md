@@ -4,27 +4,48 @@ A simple banking system implemented in TypeScript, following OOP and SOLID princ
 
 ## Folder Structure
 
-banking-app/
-├── package.json
-├── tsconfig.json
-└── src/
-├── controllers/
-│ └── BankController.ts
-├── interfaces/
-│ ├── IAccount.ts
-│ ├── ICustomer.ts
-│ └── ITransaction.ts
-├── models/
-│ ├── Account.ts
-│ ├── Customer.ts
-│ └── Transaction.ts
-├── services/
-│ ├── AccountService.ts
-│ ├── CustomerService.ts
-│ └── TransactionService.ts
-├── utils/
-│ └── IdGenerator.ts
-└── index.ts
+    ```bash
+    banking-app/
+    
+    ├── package.json
+    
+    ├── tsconfig.json
+    
+    └── src/
+    
+    ├── controllers/
+    
+    │ └── BankController.ts
+    
+    ├── interfaces/
+    
+    │ ├── IAccount.ts
+    
+    │ ├── ICustomer.ts
+    
+    │ └── ITransaction.ts
+    
+    ├── models/
+    
+    │ ├── Account.ts
+    
+    │ ├── Customer.ts
+    
+    │ └── Transaction.ts
+    
+    ├── services/
+    
+    │ ├── AccountService.ts
+    
+    │ ├── CustomerService.ts
+    
+    │ └── TransactionService.ts
+    
+    ├── utils/
+    
+    │ └── IdGenerator.ts
+    
+    └── index.ts
 
 ## Description
 
