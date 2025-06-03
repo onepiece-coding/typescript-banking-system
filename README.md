@@ -79,7 +79,6 @@ A simple banking system implemented in TypeScript, following OOP and SOLID princ
 2. **Install dependencies**
 
    ```bash
-    
    npm install
  
 This will install:
