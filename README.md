@@ -3,9 +3,48 @@
 A simple banking system implemented in TypeScript, following OOP and SOLID principles. This project demonstrates a clear folder structure with interfaces, models, services, and a controller. It runs entirely in memory (no external database).
 
 ## Folder Structure
-
-    ```bash
-    dddddd
+    
+    banking-app/
+    
+    ├── package.json
+    
+    ├── tsconfig.json
+    
+    └── src/
+    
+    ├── controllers/
+    
+    │ └── BankController.ts
+    
+    ├── interfaces/
+    
+    │ ├── IAccount.ts
+    
+    │ ├── ICustomer.ts
+    
+    │ └── ITransaction.ts
+    
+    ├── models/
+    
+    │ ├── Account.ts
+    
+    │ ├── Customer.ts
+    
+    │ └── Transaction.ts
+    
+    ├── services/
+    
+    │ ├── AccountService.ts
+    
+    │ ├── CustomerService.ts
+    
+    │ └── TransactionService.ts
+    
+    ├── utils/
+    
+    │ └── IdGenerator.ts
+    
+    └── index.ts
 
 ## Description
 
@@ -59,7 +98,6 @@ The default tsconfig.json is already set up. You can adjust compiler options if 
 
 Use ts-node to run the TypeScript source directly:
 
-    ```bash
     npm start
 
 - This executes src/index.ts via ts-node.
@@ -75,8 +113,6 @@ Use ts-node to run the TypeScript source directly:
 4. Listing all customers and accounts
 
 ### Sample Output
-
-    ```bash
     
     Opened account X1 for customer Alice Johnson
     Opened account X2 for customer Bob Smith
@@ -107,7 +143,6 @@ Use ts-node to run the TypeScript source directly:
 
 To compile TypeScript into JavaScript under dist/:
 
-    ```bash
     npm run build
     
 - Compiled files will appear in dist/.
