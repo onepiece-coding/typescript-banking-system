@@ -110,10 +110,12 @@ You only need to install dependencies once.
    ```bash
    npm install
    
-3. Install prompt-sync (for console input)
+3. **Install prompt-sync (for console input)**
 
    ```bash
    npm install prompt-sync
+
+---
    
 ## How to Run
 
@@ -132,7 +134,9 @@ This runs ts-node src/index.ts and starts the console app.
 
 - Once logged in, pick an operation (deposit, withdraw, transfer, view, delete, or logout).
 
-##Usage Guide
+---
+
+## Usage Guide
 
 1. **Login / Create Account**
 
@@ -173,6 +177,8 @@ Once you’re logged in (or just created an account), you’ll see options:
 3. **Exit**
    
 At any time, type “exit” when asked for your code to quit the app.
+
+---
 
 ## Example Session
 
@@ -224,9 +230,9 @@ At any time, type “exit” when asked for your code to quit the app.
 
 - [TypeScript](https://www.typescriptlang.org/)
 
-- (ts-node)[https://www.npmjs.com/package/ts-node]
+- [ts-node](https://www.npmjs.com/package/ts-node)
 
-- (prompt-sync)[https://www.npmjs.com/package/prompt-sync]
+- [prompt-sync](https://www.npmjs.com/package/prompt-sync)
 
 ## Notes
 
