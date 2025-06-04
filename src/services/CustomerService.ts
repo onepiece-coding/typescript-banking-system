@@ -9,7 +9,7 @@ export class CustomerService {
   public createCustomer(name: string, email: string): Customer {
     const id = IdGenerator.generate();
     const customer = new Customer(id, name, email);
-    this.customers.set(id, customer); // save customer to db
+    this.customers.set(id, customer);
     return customer;
   }
 
@@ -21,5 +21,12 @@ export class CustomerService {
   // List all customers
   public listCustomers(): Customer[] {
     return Array.from(this.customers.values());
+  }
+
+  // Delete a single customer by ID
+  public deleteCustomer(id: string): void {
+    if (!this.customers.delete(id)) {
+      throw new Error("Customer not found!");
+    }
   }
 }

@@ -1,12 +1,10 @@
 import { Transaction } from "../models/Transaction";
-import { ITransaction, TransactionType } from "../interfaces/ITransaction";
+import { TransactionType } from "../interfaces/ITransaction";
 import { IdGenerator } from "../utils/IdGenerator";
 
-// Manages transactions in-memory
 export class TransactionService {
-  private transactions: ITransaction[] = [];
+  private transactions: Transaction[] = [];
 
-  // Record a transaction and return it
   public record(
     accountId: string,
     type: TransactionType,
@@ -19,13 +17,17 @@ export class TransactionService {
     return tx;
   }
 
-  // Get all transactions for a given account
-  public getTransactionsForAccount(accountId: string): ITransaction[] {
+  public getTransactionsForAccount(accountId: string): Transaction[] {
     return this.transactions.filter((tx) => tx.accountId === accountId);
   }
 
-  // Get all transactions (e.g., for admin)
-  public listAll(): ITransaction[] {
+  public listAll(): Transaction[] {
     return [...this.transactions];
+  }
+
+  public deleteTransaction(id: string): void {
+    const idx = this.transactions.findIndex((tx) => tx.id === id);
+    if (idx === -1) throw new Error("Transaction not found");
+    this.transactions.splice(idx, 1);
   }
 }
