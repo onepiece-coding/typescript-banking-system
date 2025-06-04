@@ -226,6 +226,8 @@ At any time, type “exit” when asked for your code to quit the app.
     Enter your 4-digit account code (or type "exit" to quit): exit
     Goodbye!
 
+---
+
 ## Dependencies
 
 - [TypeScript](https://www.typescriptlang.org/)
@@ -234,6 +236,8 @@ At any time, type “exit” when asked for your code to quit the app.
 
 - [prompt-sync](https://www.npmjs.com/package/prompt-sync)
 
+---
+
 ## Notes
 
 - All data is stored in memory. If you stop the app, all accounts and transactions are lost.
@@ -241,6 +245,8 @@ At any time, type “exit” when asked for your code to quit the app.
 - No two accounts can share the same 4-digit code.
 
 - Transfers require knowing the recipient’s account ID, not their code.
+
+---
 
 ## Connect With Me
 
